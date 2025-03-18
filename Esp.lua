@@ -6,6 +6,7 @@ screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 -- Настройка размера меню для всех устройств
 local uiScale = Instance.new("UIScale", screenGui)
 uiScale.Scale = 1
+uiScale.Parent = screenGui
 
 -- Создаем главное окно
 local mainWindow = Instance.new("Frame")
