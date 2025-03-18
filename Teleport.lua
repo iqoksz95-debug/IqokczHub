@@ -25,6 +25,12 @@ mainWindow.Active = true
 mainWindow.Draggable = true
 mainWindow.Parent = screenGui
 
+-- Добавляем обводку к главному окну
+local uiStroke = Instance.new("UIStroke")
+uiStroke.Thickness = 1
+uiStroke.Color = Color3.fromRGB(255, 255, 255)
+uiStroke.Parent = mainWindow
+
 -- Закругление окна
 local uiCorner = Instance.new("UICorner")
 uiCorner.CornerRadius = UDim.new(0, 6)
